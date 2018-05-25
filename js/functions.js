@@ -4,7 +4,7 @@ function activeNav(pageUrl) {
   $("ul.navbar-nav > li").each(function() {
     var li = $(this);
     var href = li.find("a").attr("href");
-    if(pageUrl && pageUrl.indexOf(href) == 0) {
+    if(pageUrl.indexOf(href) == 0) {
       li.addClass("active");
     } else {
       li.removeClass("active");
