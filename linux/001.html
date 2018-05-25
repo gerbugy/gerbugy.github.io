@@ -2,7 +2,9 @@
 layout: default
 title: 사용자, 그룹 관리
 ---
+
 <div class="container-fluid">
+  1. 사용자<br>
   <pre># 확인
 $ cat /etc/passwd
 
@@ -19,4 +21,18 @@ $ usermod mysql
 
 # 비밀번호 설정
 $ passwd mysql</pre>
+  
+  2. 그룹<br>
+  <pre>
+# 확인
+$ groups
+$ cat /etc/group
+
+# 추가
+$ groupadd dba
+$ groupadd -g 567 dba # GID 지정
+
+# 삭제
+$ groupdel dba
+  </pre>
 </div>
