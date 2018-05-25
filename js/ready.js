@@ -1,8 +1,11 @@
 alert(111);
+
+/**
 $(document).ready(function() {
   alert(222);
   fnNavActive();
 });
+**/
 
 function fnNavActive() {
   alert(333);
