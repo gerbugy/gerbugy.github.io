@@ -2,9 +2,8 @@
 layout: default
 title: 방화벽 설정
 ---
-<div class="container-fluid">
-  기본 명령어<br>
-  <pre># 확인
+기본 명령어
+<pre># 확인
 $ sudo firewall-cmd --state
 $ sudo firewall-cmd --list-all
 $ sudo firewall-cmd --list-all-zone
@@ -72,4 +71,3 @@ ufw reload</pre>
   주소 포워딩
   <pre>$ sudo firewall-cmd --zone=public --add-forward-port=port=80:proto=tcp:toport=8080 --permanent
 $ sudo firewall-cmd --reload</pre>
-</div>
