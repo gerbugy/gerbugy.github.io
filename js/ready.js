@@ -1,1 +1,3 @@
-alert(11);
+$( document ).ready(function() {
+    alert( "ready!" );
+});
