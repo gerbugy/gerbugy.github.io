@@ -1,7 +1,22 @@
 ---
 layout: default
-title: ȯ���մϴ�
+title: 사용자, 그룹 관리
 ---
 <div class="container-fluid">
-  ������ ���α��Դϴ�
+  <pre># 확인
+$ cat /etc/passwd
+
+# 추가
+$ useradd mysql
+$ useradd -g dba mysql # 그룹 지정
+
+# 삭제
+$ userdel mysql
+$ userdel -r mysql # 사용자의 홈디렉토리도 삭제
+
+# 수정
+$ usermod mysql
+
+# 비밀번호 설정
+$ passwd mysql</pre>
 </div>
