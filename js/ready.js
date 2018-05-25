@@ -5,6 +5,8 @@ $(document).ready(function() {
 });
 
 function fnNavActive() {
+  alert(333);
+  /**
   var pageUrl = "{{ page.url }}";
   if(pageUrl.substr(pageUrl.length - 1) == "/") pageUrl = pageUrl.substr(0, pageUrl.length - 1);
   if(pageUrl.substr(pageUrl.length - 5) == ".html") pageUrl = pageUrl.substr(0, pageUrl.length - 5);
@@ -17,4 +19,5 @@ function fnNavActive() {
       li.removeClass("active");
     }
   });
+  **/
 }
