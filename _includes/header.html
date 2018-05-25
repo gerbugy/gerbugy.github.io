@@ -19,7 +19,7 @@ console.log(pageUrl);
 $("ul.navbar-nav > li").each(function() {
   var li = $(this);
   var href = li.find("a").attr("href");
-  if(href.indexOf(pageUrl) == 0) {
+  if(pageUrl && href.indexOf(pageUrl) == 0) {
     li.addClass("active");
   } else {
     li.removeClass("active");
