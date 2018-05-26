@@ -1,4 +1,7 @@
 function activeNav(pageUrl) {
+  
+  console.log("start...");
+  
   if(pageUrl.substr(pageUrl.length - 1) == "/") pageUrl = pageUrl.substr(0, pageUrl.length - 1);
   if(pageUrl.substr(pageUrl.length - 5) == ".html") pageUrl = pageUrl.substr(0, pageUrl.length - 5);
   $("ul.navbar-nav > li").each(function() {
