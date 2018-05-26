@@ -2,10 +2,13 @@ function activeNav(pageUrl) {
   if(pageUrl.substr(pageUrl.length - 1) == "/") pageUrl = pageUrl.substr(0, pageUrl.length - 1);
   if(pageUrl.substr(pageUrl.length - 5) == ".html") pageUrl = pageUrl.substr(0, pageUrl.length - 5);
   $("ul.navbar-nav > li").each(function() {
+    
+    console.log("===========================");
+    
     var li = $(this);
     activeNavItem(pageUrl, li);
 
-    console.log("===========================");
+
     li.find("ul.dropdown-menu > li").each(function() {
       // $(this).addClass("child-li"); // TODO
       console.log("li:" + $(this).find("a").attr("href"));
