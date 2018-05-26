@@ -15,6 +15,7 @@ function activeNav(pageUrl) {
     ***/
 
     li.find("ul.dropdown-menu > li").each(function() {
+      $(this).addClass("child-li"); // TODO
       activeNavItem(pageUrl, $(this));
     });
     
