@@ -4,15 +4,6 @@ function activeNav(pageUrl) {
   $("ul.navbar-nav > li").each(function() {
     var li = $(this);
     activeNavItem(pageUrl, li);
-    /***
-    
-    var href = li.find("a").attr("href");
-    if(pageUrl.indexOf(href) == 0) {
-      li.addClass("active");
-    } else {
-      li.removeClass("active");
-    }
-    ***/
 
     li.find("ul.dropdown-menu > li").each(function() {
       // $(this).addClass("child-li"); // TODO
