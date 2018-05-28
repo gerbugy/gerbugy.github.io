@@ -1,0 +1,34 @@
+---
+layout: default
+title: 사용자, 그룹 관리
+---
+  1. 사용자<br>
+  <pre># 확인
+$ cat /etc/passwd
+
+# 추가
+$ useradd mysql
+$ useradd -g dba mysql # 그룹 지정
+
+# 삭제
+$ userdel mysql
+$ userdel -r mysql # 사용자의 홈디렉토리도 삭제
+
+# 수정
+$ usermod mysql
+
+# 비밀번호 설정
+$ passwd mysql</pre>
+  
+  2. 그룹<br>
+  <pre># 확인
+$ groups
+$ cat /etc/group
+
+# 추가
+$ groupadd dba
+$ groupadd -g 567 dba # GID 지정
+
+# 삭제
+$ groupdel dba</pre>
+참고: http://naompine.blogspot.kr/2015/07/8-centos.html
